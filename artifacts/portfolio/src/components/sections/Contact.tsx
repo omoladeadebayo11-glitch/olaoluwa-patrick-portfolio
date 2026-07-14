@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 const CONTACT_INFO = {
   email: 'hello@example.com',
   phone: '+1 (000) 000-0000',
-  location: 'City, Country'
+  location: 'Lagos, Nigeria'
 };
 
 export function Contact() {
