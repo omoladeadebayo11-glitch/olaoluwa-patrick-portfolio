@@ -33,7 +33,7 @@ export function Hero() {
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-6 text-sm font-medium text-primary">
             <Leaf className="w-4 h-4" />
-            <span>Sustainability Advocate</span>
+            <span>Sustainability Advocate & Content Creator</span>
           </div>
         </motion.div>
 

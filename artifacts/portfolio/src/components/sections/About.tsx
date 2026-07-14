@@ -16,7 +16,7 @@ export function About() {
           <h2 className="text-sm font-semibold uppercase tracking-widest text-primary mb-8">About Me</h2>
           
           <p className="text-2xl md:text-3xl lg:text-4xl font-display font-medium text-foreground leading-relaxed">
-            I am Aladeojebi Olaoluwa Patrick, a passionate Sustainability Advocate who believes in creating meaningful impact through sustainable practices, effective communication, and strong human relationships. Beyond sustainability, I enjoy cooking, continuous learning, and connecting with people from diverse backgrounds. I strive to inspire positive change while contributing to healthier communities and a better future.
+            I am Aladeojebi Olaoluwa Patrick, a passionate Sustainability Advocate and Content Creator who believes in creating meaningful impact through sustainable practices, effective communication, and strong human relationships. Beyond sustainability, I enjoy cooking, continuous learning, and connecting with people from diverse backgrounds. I strive to inspire positive change while contributing to healthier communities and a better future.
           </p>
         </motion.div>
       </div>

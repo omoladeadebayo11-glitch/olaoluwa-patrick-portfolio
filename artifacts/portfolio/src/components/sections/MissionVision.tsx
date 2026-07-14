@@ -35,7 +35,7 @@ export function MissionVision() {
             </div>
             <h3 className="text-2xl font-display font-semibold text-foreground mb-6">Mission</h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              To promote sustainable living, inspire positive environmental action, and use effective communication to influence meaningful change in individuals and communities.
+              To promote sustainable living by creating engaging content, educating diverse audiences, and using effective communication to encourage environmental responsibility, innovation, and community development.
             </p>
           </motion.div>
 
@@ -45,7 +45,7 @@ export function MissionVision() {
             </div>
             <h3 className="text-2xl font-display font-semibold text-foreground mb-6">Vision</h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              To become a recognized sustainability professional dedicated to building a healthier, greener, and more sustainable future for generations to come.
+              To become a recognized sustainability professional and impactful content creator, inspiring individuals and communities to embrace sustainable living, positive action, and meaningful change through education, creativity, and authentic storytelling.
             </p>
           </motion.div>
         </motion.div>
