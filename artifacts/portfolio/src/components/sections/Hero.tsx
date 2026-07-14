@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Leaf } from 'lucide-react';
+import profilePhoto from '@/assets/profile.jpg';
 
 export function Hero() {
   return (
@@ -18,11 +19,11 @@ export function Hero() {
           <div className="absolute inset-[-8px] rounded-full bg-gradient-to-tr from-primary/30 to-accent/30 blur-md opacity-70 group-hover:opacity-100 transition-opacity duration-700" />
           
           <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full bg-white/80 backdrop-blur-md border border-white shadow-xl flex items-center justify-center overflow-hidden">
-            <span className="text-3xl md:text-4xl font-display font-medium text-primary tracking-tight">AOP</span>
-            {/* Placeholder overlay for actual photo */}
-            <div className="absolute inset-0 bg-primary/5 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-              <span className="text-xs font-medium text-primary uppercase tracking-widest bg-white/90 px-3 py-1 rounded-full">Add Photo</span>
-            </div>
+            <img
+              src={profilePhoto}
+              alt="Aladeojebi Olaoluwa Patrick"
+              className="w-full h-full object-cover"
+            />
           </div>
         </motion.div>
 
