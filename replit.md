@@ -1,44 +1,41 @@
-# [Project name]
+# Aladeojebi Olaoluwa Patrick — Portfolio
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+A premium, nature-inspired personal portfolio site for a Sustainability Advocate, built as a standalone frontend-only React + Vite app.
 
 ## Run & Operate
 
-- `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
+- `pnpm --filter @workspace/portfolio run dev` — run the portfolio site locally in this workspace
+- `cd artifacts/portfolio && npm install && npm run build` — standalone build, produces `dist/public` (this is what Netlify runs)
 - `pnpm run typecheck` — full typecheck across all packages
-- `pnpm run build` — typecheck + build all packages
-- `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
-- `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
-- Required env: `DATABASE_URL` — Postgres connection string
 
 ## Stack
 
-- pnpm workspaces, Node.js 24, TypeScript 5.9
-- API: Express 5
-- DB: PostgreSQL + Drizzle ORM
-- Validation: Zod (`zod/v4`), `drizzle-zod`
-- API codegen: Orval (from OpenAPI spec)
-- Build: esbuild (CJS bundle)
+- pnpm workspaces, Node.js 24, TypeScript 5.9 (repo-wide)
+- `artifacts/portfolio`: React 19 + Vite + Tailwind v4 + Framer Motion, deliberately standalone (no workspace: deps, no catalog: versions) so it also installs/builds with plain `npm` outside the monorepo
+- Other scaffolded artifacts (`api-server`, `mockup-sandbox`) exist in the workspace but are unused — the portfolio has no backend, no database, no auth
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/portfolio/` — the entire site (single page, sections under `src/components/sections/`, composed in `src/pages/Portfolio.tsx`)
+- `netlify.toml` (repo root) — sets `base = "artifacts/portfolio"`, `command = "npm run build"`, `publish = "dist/public"`, and an SPA redirect, so Netlify deploys with zero manual dashboard config
+- Editable placeholders (social links, email/phone/location) live as named constants near the top of `Connect.tsx` and `Contact.tsx`
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- The portfolio artifact was deliberately decoupled from the monorepo's shared workspace conventions (no `workspace:*` deps, no `catalog:` versions, self-contained `tsconfig.json`, no `PORT`/`BASE_PATH` required for build) because the user needs it to build and deploy standalone on Netlify.
+- No backend/API/database — this is a static, frontend-only site by explicit requirement.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+Single-page portfolio: hero, about, mission/vision, soft skills grid, passions grid, social links, contact, footer. Nature-inspired green/white/blue palette, glassmorphism cards, floating background shapes, Framer Motion scroll animations.
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
+- Footer credit line "Site by RaidenSmith" must remain alongside the owner's copyright line.
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- Before editing `artifacts/portfolio`, remember it intentionally does NOT follow the rest of the monorepo's `workspace:*`/`catalog:` conventions — keep it that way or the standalone Netlify build breaks.
 
 ## Pointers
 
