@@ -3,11 +3,11 @@ import { Linkedin } from 'lucide-react';
 import { SiInstagram, SiTiktok, SiX, SiFacebook } from 'react-icons/si';
 
 const SOCIAL_LINKS = [
-  { name: 'Instagram', url: 'https://instagram.com/placeholder', icon: SiInstagram, color: 'group-hover:text-[#E1306C]' },
-  { name: 'TikTok', url: 'https://tiktok.com/@placeholder', icon: SiTiktok, color: 'group-hover:text-black dark:group-hover:text-white' },
-  { name: 'LinkedIn', url: 'https://linkedin.com/in/placeholder', icon: Linkedin, color: 'group-hover:text-[#0A66C2]' },
-  { name: 'X (Twitter)', url: 'https://x.com/placeholder', icon: SiX, color: 'group-hover:text-black dark:group-hover:text-white' },
-  { name: 'Facebook', url: 'https://facebook.com/placeholder', icon: SiFacebook, color: 'group-hover:text-[#1877F2]' },
+  { name: 'Instagram', url: 'https://www.instagram.com/olaoluwa4t?igsh=ZWtoN2Z3ODVhbHgz', icon: SiInstagram, color: 'group-hover:text-[#E1306C]' },
+  { name: 'TikTok', url: 'https://www.tiktok.com/@kairo_s1?_r=1&_t=ZS-980wQTSsH3d', icon: SiTiktok, color: 'group-hover:text-black dark:group-hover:text-white' },
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/olaoluwa-aladeojebi-251342279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', icon: Linkedin, color: 'group-hover:text-[#0A66C2]' },
+  { name: 'X (Twitter)', url: 'https://x.com/AladeojebiP', icon: SiX, color: 'group-hover:text-black dark:group-hover:text-white' },
+  { name: 'Facebook', url: 'https://www.facebook.com/share/1EXBjwVviL/', icon: SiFacebook, color: 'group-hover:text-[#1877F2]' },
 ];
 
 export function Connect() {

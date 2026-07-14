@@ -2,8 +2,8 @@ import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
 const CONTACT_INFO = {
-  email: 'hello@example.com',
-  phone: '+1 (000) 000-0000',
+  email: 'aladeojebio@gmail.com',
+  phone: '+234 701 927 2107',
   location: 'Lagos, Nigeria'
 };
 
