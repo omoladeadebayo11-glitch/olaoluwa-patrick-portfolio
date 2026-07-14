@@ -9,8 +9,7 @@ const SKILLS = [
   "Critical Thinking",
   "Adaptability",
   "Time Management",
-  "Emotional Intelligence",
-  "Public Speaking"
+  "Emotional Intelligence"
 ];
 
 export function SoftSkills() {

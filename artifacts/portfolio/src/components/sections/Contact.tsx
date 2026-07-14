@@ -23,7 +23,7 @@ export function Contact() {
           className="flex-1 text-center md:text-left"
         >
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-display font-semibold mb-6 leading-tight">
-            Let's collaborate to create sustainable solutions.
+            Let's collaborate
           </h2>
           <p className="text-primary-foreground/70 text-lg md:text-xl max-w-md mx-auto md:mx-0">
             Whether you have a project in mind, want to discuss an idea, or simply say hello.
